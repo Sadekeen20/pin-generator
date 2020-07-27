@@ -58,13 +58,14 @@
     <script>
         var pin;
         
+        //pin generate
         function setPin(){
             var val = Math.floor(1000 + Math.random() * 9000);
             document.getElementById('pinBox').value=val;
             pin=val;
         }
 
-
+        //pin input handler
         function setText(value){
             var inputBox=document.getElementById('inputBox');
             var x=inputBox.value;
@@ -73,6 +74,7 @@
             
         }
 
+        //delete last digit and clear segment 
         function putExp(option){
             var inputBox=document.getElementById('inputBox');
          
@@ -91,6 +93,7 @@
          }
         }
 
+        //verifying generated pin 
         function verify(){
             var inputValue=document.getElementById('inputBox').value;
             if(inputValue==pin)
