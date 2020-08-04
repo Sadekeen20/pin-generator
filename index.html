@@ -56,7 +56,7 @@
     </div>
 
     <script>
-        var pin;
+        
         
         //pin generate
         function setPin(){
@@ -95,6 +95,8 @@
 
         //verifying generated pin 
         function verify(){
+            var pin=document.getElementById('pinBox').value;
+            console.log(pin);
             var inputValue=document.getElementById('inputBox').value;
             if(inputValue==pin)
             {
